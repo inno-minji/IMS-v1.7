@@ -343,7 +343,7 @@ function setDate() {
 		 						</div>
 		 						</c:if>
 	  							<div class="err_plus"> 
-	  								<a <c:if test="${ass766 eq 'T' || staff.kAdminAuth eq 'T'}">onclick="moveDetail('/mes/asset/kw_asset_lf.do');" </c:if> style="cursor:pointer;">+</a> 
+	  								<a <c:if test="${ass766 eq 'T' || staff.kAdminAuth eq 'T'}">onclick="moveDetail('/mes/asset/kw_asset_if.do');" </c:if> style="cursor:pointer;">+</a> 
 	  							</div> 
   							</div>
 	 					</div>
