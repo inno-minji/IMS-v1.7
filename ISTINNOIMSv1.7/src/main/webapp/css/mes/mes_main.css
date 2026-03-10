@@ -950,8 +950,11 @@ font-size: 18px;
 
 
 .dashboard_wrap .eos_text{
+	width:100%;
+	max-width: 100%;
 	display: flex;
 	position: relative;
+	justify-content: space-between; align-items: center;
 }
 
 .dashboard_wrap .eos_text span {
@@ -974,8 +977,7 @@ font-size: 18px;
 .eos_all {
 	width: 38px;
   height: 12px;
-/*   margin: 5px 11px 10.3px 200px; */
-position: absolute; right: 0;
+   margin: 5px 11px 10.3px 160px; 
   font-family: "Noto Sans KR";
   font-size: 12px;
   font-weight: bold;

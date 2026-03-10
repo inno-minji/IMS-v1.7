@@ -167,13 +167,6 @@ function setDate() {
   margin: 0 auto; 
 }
 
-.err_group {
-    display: flex;
-    justify-content: flex-end; 
-    align-items: center; 
-    gap: 8px;
-}
-
 .err_all,
 .err_plus {
     padding-top: 0;
@@ -197,7 +190,18 @@ function setDate() {
 .fc .fc-scrollgrid-section-header .fc-scroller {
   overflow: hidden !important;
 }
-
+.err_group {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+    gap: 8px;
+}
+.err_all,
+.err_plus,
+.eos_all
+.eos_plus {
+    padding-top: 0;
+}
 
 
 </style>
@@ -332,14 +336,16 @@ function setDate() {
 		 			<div class="device">
 		 				<div class="err_text">
 	 						<span>장비현황</span>
-	 						<c:if test="${ass742 eq 'T' || staff.kAdminAuth eq 'T'}">
-	 						<div class="err_all">
-	 							<a onclick="moveDetail('/mes/asset/kw_asset_lf.do');" style="cursor:pointer;">viewAll</a>
-	 						</div>
-	 						</c:if>
-<!--  							<div class="err_plus"> -->
-<%--  								<a <c:if test="${ass766 eq 'T' || staff.kAdminAuth eq 'T'}">onclick="moveDetail('/mes/asset/kw_asset_lf.do');" </c:if> style="cursor:pointer;">+</a> --%>
-<!--  							</div> -->
+ 							<div class="err_group">
+		 						<c:if test="${ass742 eq 'T' || staff.kAdminAuth eq 'T'}">
+		 						<div class="err_all">
+		 							<a onclick="moveDetail('/mes/asset/kw_asset_lf.do');" style="cursor:pointer;">viewAll</a>
+		 						</div>
+		 						</c:if>
+	  							<div class="err_plus"> 
+	  								<a <c:if test="${ass766 eq 'T' || staff.kAdminAuth eq 'T'}">onclick="moveDetail('/mes/asset/kw_asset_lf.do');" </c:if> style="cursor:pointer;">+</a> 
+	  							</div> 
+  							</div>
 	 					</div>
 		 				<div class="tabs">
 		 					<div class="tab">
@@ -476,14 +482,16 @@ function setDate() {
 		 			<div>
 		 				<div class="eos_text">
 	 						<span>EoS</span>
-	 						<c:if test="${ass742 eq 'T' || staff.kAdminAuth eq 'T'}">
-	 						<div class="eos_all">
-	 							<a onclick="moveDetail('/mes/asset/kw_asset_lf.do');" style="cursor:pointer;">viewAll</a>
-	 						</div>
-	 						</c:if>
-<!--  							<div class="eos_plus"> -->
-<%--  								<a <c:if test="${ass766 eq 'T' || staff.kAdminAuth eq 'T'}">onclick="moveDetail('/mes/asset/kw_asset_if.do');" </c:if> style="cursor:pointer;">+</a> --%>
-<!--  							</div> -->
+ 							<div class="err_group">
+		 						<c:if test="${ass742 eq 'T' || staff.kAdminAuth eq 'T'}">
+		 						<div class="eos_all">
+		 							<a onclick="moveDetail('/mes/asset/kw_asset_lf.do');" style="cursor:pointer;">viewAll</a>
+		 						</div>
+		 						</c:if>
+	 							<div class="eos_plus"> 
+	 								<a <c:if test="${ass766 eq 'T' || staff.kAdminAuth eq 'T'}">onclick="moveDetail('/mes/asset/kw_asset_if.do');" </c:if> style="cursor:pointer;">+</a>
+	  							</div> 
+  							</div>
 	 					</div>
 		 				<table  class="dash_table" >
 							<thead>
@@ -514,14 +522,16 @@ function setDate() {
 		 			<div>
 		 				<div class="eos_text">
 	 						<span>EoL</span>
-	 						<c:if test="${ass742 eq 'T' || staff.kAdminAuth eq 'T'}">
-	 						<div class="eos_all">
-	 							<a onclick="moveDetail('/mes/asset/kw_asset_lf.do');" style="cursor:pointer;">viewAll</a> 
-	 						</div>
-	 						</c:if>
-<!--  							<div class="eos_plus"> -->
-<%--  								<a <c:if test="${ass766 eq 'T' || staff.kAdminAuth eq 'T'}">onclick="moveDetail('/mes/asset/kw_asset_if.do');" </c:if> style="cursor:pointer;">+</a> --%>
-<!--  							</div> -->
+ 							<div class="err_group">
+		 						<c:if test="${ass742 eq 'T' || staff.kAdminAuth eq 'T'}">
+		 						<div class="eos_all">
+		 							<a onclick="moveDetail('/mes/asset/kw_asset_lf.do');" style="cursor:pointer;">viewAll</a> 
+		 						</div>
+		 						</c:if>
+	  							<div class="eos_plus"> 
+	  								<a <c:if test="${ass766 eq 'T' || staff.kAdminAuth eq 'T'}">onclick="moveDetail('/mes/asset/kw_asset_if.do');" </c:if> style="cursor:pointer;">+</a> 
+	  							</div> 
+  							</div>
 	 					</div>
 		 				<table class="dash_table" >
 							<thead>
@@ -552,14 +562,16 @@ function setDate() {
 		 			<div>
 		 				<div class="eos_text">
 	 						<span>라이선스</span>
-	 						<c:if test="${ass754 eq 'T' || staff.kAdminAuth eq 'T'}">
-	 						<div class="eos_all">
-	 							<a onclick="moveDetail('/mes/asset/kw_Software_Register_lf.do');" style="cursor:pointer;">viewAll</a> 
-	 						</div>
-	 						</c:if>
-<!--  							<div class="eos_plus"> -->
-<%--  								<a <c:if test="${ass766 eq 'T' || staff.kAdminAuth eq 'T'}">onclick="moveDetail('/mes/asset/kw_Software_Register_if.do');" </c:if> style="cursor:pointer;">+</a> --%>
-<!--  							</div> -->
+ 							<div class="err_group">
+		 						<c:if test="${ass754 eq 'T' || staff.kAdminAuth eq 'T'}">
+		 						<div class="eos_all">
+		 							<a onclick="moveDetail('/mes/asset/kw_Software_Register_lf.do');" style="cursor:pointer;">viewAll</a> 
+		 						</div>
+		 						</c:if>
+	  							<div class="eos_plus"> 
+	  								<a <c:if test="${ass766 eq 'T' || staff.kAdminAuth eq 'T'}">onclick="moveDetail('/mes/asset/kw_Software_Register_if.do');" </c:if> style="cursor:pointer;">+</a> 
+	  							</div> 
+  							</div>
 	 					</div>
 		 				<table class="dash_table" >
 							<thead>
@@ -590,14 +602,16 @@ function setDate() {
 		 			<div>
 		 				<div class="eos_text">
 	 						<span>노후장비</span>
-	 						<c:if test="${ass742 eq 'T' || staff.kAdminAuth eq 'T'}">
-	 						<div class="eos_all">
-	 							<a onclick="moveDetail('/mes/asset/kw_asset_lf.do');"style="cursor:pointer;">viewAll</a> 
-	 						</div>
-	 						</c:if> 
-<!--  							<div class="eos_plus"> -->
-<%--  								<a <c:if test="${ass766 eq 'T' || staff.kAdminAuth eq 'T'}">onclick="moveDetail('/mes/asset/kw_asset_if.do');" </c:if> style="cursor:pointer;">+</a> --%>
-<!--  							</div> -->
+ 							<div class="err_group">
+		 						<c:if test="${ass742 eq 'T' || staff.kAdminAuth eq 'T'}">
+		 						<div class="eos_all">
+		 							<a onclick="moveDetail('/mes/asset/kw_asset_lf.do');"style="cursor:pointer;">viewAll</a> 
+		 						</div>
+		 						</c:if> 
+	  							<div class="eos_plus"> 
+	  								<a <c:if test="${ass766 eq 'T' || staff.kAdminAuth eq 'T'}">onclick="moveDetail('/mes/asset/kw_asset_if.do');" </c:if> style="cursor:pointer;">+</a> 
+	  							</div> 
+  							</div>
 	 					</div>
 		 				<table class="dash_table" >
 							<thead>
